@@ -1,10 +1,11 @@
 var playlist = {drake:"miss me", bruce:"dancing in the dark", meek:"chariot"};
-function updatePlaylist(object,key,value) {
-  object[key] = value
+
+function updatePlaylist(playlist,artist,song) {
+  playlist[artist] = song
   return playlist
 }
 
-function removeFromPlaylist(object,key) {
-  delete playlist[key]
+function removeFromPlaylist(playlist,artist) {
+  delete playlist[artist]
   return playlist
 }
